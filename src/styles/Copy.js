@@ -56,6 +56,10 @@ const ActionCopy = styled(CopyImp)`
         margin-left: 12px;
         position: relative;
         bottom: 2.5px;
+
+        &:hover {
+            color: black;
+        }
     }
 `;
 
