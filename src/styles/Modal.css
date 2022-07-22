@@ -1,0 +1,23 @@
+.modal-wrapper, .modal {
+    display: flex !important;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+    .modal {
+        width: 70%;
+    }
+}
+
+.modal-content {
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.annotationLayer {
+    display: none !important;
+}
