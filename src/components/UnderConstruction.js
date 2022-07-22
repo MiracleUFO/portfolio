@@ -23,7 +23,7 @@ const UnderConstruction = () => (
         <CopyContainer>
             <h1>Under <br /> Construction</h1>
             <CopyImp>
-                I’m currently redesigning miracleufo.codes and updating it with my most recent projects.
+                I’m currently recreating miracleufo.codes and updating it with my most recent projects and experience.
                 If you would like to see a sampling of my work or are interested in starting a project together, <b><i>please get in touch:</i></b>
             </CopyImp>
             <Copy>
