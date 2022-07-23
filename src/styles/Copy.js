@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const Copy = styled.p`
     font-family: 'Nunito', sans-serif;
-    color: #f7f4f2;
+    font-weight: 200;
+    color: rgb(247, 244, 242);
     width: 90%;
     font-size: 0.9em;
     overflow-x: hidden;
@@ -11,6 +12,10 @@ const Copy = styled.p`
 
     @media (min-width: 800px) {
         width: 30vw;
+    }
+
+    & b {
+        font-weight: 500;
     }
 
     & a {

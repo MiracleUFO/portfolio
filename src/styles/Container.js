@@ -46,9 +46,11 @@ const CopyContainer = styled.section`
         color: black;
         position: relative;
         top: 7vh;
+        margin-bottom: 40px;
 
         @media (min-width: 800px) {
             font-size: 4.4vw;
+            margin-bottom: revert;
         }
     }
 `;

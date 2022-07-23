@@ -4,7 +4,7 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { DocumentViewContainer } from '../styles/DocumentView';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
-import { FaDownload } from 'react-icons/fa';
+import DownloadBtn from './DownloadBtn';
 
 const DocumentView = ({ file }) => {
     const [numberOfPages, setNumberOfPages] = useState(null);
@@ -15,11 +15,9 @@ const DocumentView = ({ file }) => {
 
     return (
         <DocumentViewContainer>
-            {/*<a href="#" class="btn-slide2">
-                <span class="circle2"><i class="fa fa-download"></i></span>
-                <span class="title2">Download</span>
-                <span class="title-hover2">Click here</span>
-            </a>*/}
+            <div className='download-container'>
+                <DownloadBtn url='CV.pdf' />
+            </div>
 
             <Document file={file} onLoadSuccess={onLoadSuccess}>
                 {[...Array(numberOfPages)].map((x, i) =>

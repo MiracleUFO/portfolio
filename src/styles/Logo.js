@@ -23,21 +23,22 @@ const Logo = styled.img`
 
 const LogoName = styled.h1`
     font-family: 'Nunito', serif;
+    font-weight: 300;
     letter-spacing: 1.5px;
     position: relative;
-    left: -5px;
     top: 3vh;
+    left: -3px;
     z-index: 20;
-    animation: glitch 5s linear infinite reverse, glitch 0.2s linear infinite;
+    animation: 5s linear 0s infinite reverse none running glitch, 0.25s linear 0s infinite normal none running glitch;
 
     @keyframes glitch {
         from {perspective(6cm); opacity: 0.8}
-        to {perspective(0); opacity: 0.5}
+        to {perspective(0); opacity: 0.4}
     }
 
     @media (min-width: 800px) {
-        top: 5vh;
-        text-shadow: 0px 4px 2px #b2a98f, 0px 8px 10px rgba(0,0,0,0.5);
+        top: 7vh;
+        text-shadow: 0px 4px 2px #b2a98f, 0px 8px 10px rgba(0, 0, 0, 0.5);
     }
 `;
 
