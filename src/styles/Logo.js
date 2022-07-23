@@ -32,7 +32,7 @@ const LogoName = styled.h1`
     animation: 5s linear 0s infinite reverse none running glitch, 0.25s linear 0s infinite normal none running glitch;
 
     @keyframes glitch {
-        from {perspective(6cm); opacity: 0.8}
+        from {perspective(6cm); opacity: 0.85}
         to {perspective(0); opacity: 0.4}
     }
 

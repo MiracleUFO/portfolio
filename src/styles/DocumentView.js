@@ -15,7 +15,7 @@ const DocumentViewContainer = styled.div`
 
     & .download-container {
         position: fixed;
-        left: 65%;
+        left: 75%;
         z-index: 20;
         top: 70vh;
         background: white;
@@ -23,6 +23,7 @@ const DocumentViewContainer = styled.div`
 
         @media (min-width: 800px) {
             border-radius: 25px;
+            left: 65%;
         }
 
         @media (min-width: 800px) and (min-height: 700px) {

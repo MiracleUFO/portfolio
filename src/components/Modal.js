@@ -13,10 +13,7 @@ const Modal = ({ typeOptions }) => (
             onClick={e => e.stopPropagation()}
         >
             <ModalContent>
-                {typeOptions.type !== 'file' ?
-                    <section onClick={close}>X</section>
-                    : null
-                }
+                <section  className='close-icon' onClick={close}>X</section>
 
                 <section>
                     {typeOptions.type === 'file' ?

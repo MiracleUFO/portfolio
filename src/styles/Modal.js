@@ -30,6 +30,20 @@ const ModalContent = styled.div`
     & > section {
         max-height: calc(90vh - 40px);
     }
+
+    & .close-icon {
+        position: absolute;
+        top: 2vh;
+        max-height: max-content;
+        z-index: 100;
+        font-weight: 400;
+    }
+
+    @media (min-width: 800px) {
+        & .close-icon {
+            display: none;
+        }
+    }
 `;
 
 export {
