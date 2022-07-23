@@ -27,7 +27,7 @@ const UnderConstruction = () => (
                 If you would like to see a sampling of my work or are interested in starting a project together, <b><i>please get in touch:</i></b>
             </CopyImp>
             <Copy>
-                <a href="mailto:miracleufodiama@gmail.com">miracleufodiama@gmail.com</a>
+                <a href='mailto:miracleufodiama@gmail.com'>miracleufodiama@gmail.com</a>
             </Copy>
             <ActionCopy className='view-cv' onClick={displayModal}>
                 <span>View Resume</span>

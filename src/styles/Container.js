@@ -23,7 +23,7 @@ const CopyContainer = styled.section`
     display: flex;
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         left: -2.5px;
         top: 39vh;

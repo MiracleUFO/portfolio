@@ -41,7 +41,7 @@ const ActionCopy = styled(CopyImp)`
     position: relative;
 
     ::before {
-        content: " ";
+        content: '';
         border-bottom: 1px solid rgba(101, 74, 78, 0.45);
         border-left: 1px solid rgba(101, 74, 78, 0.45);
         padding-left: 10px;

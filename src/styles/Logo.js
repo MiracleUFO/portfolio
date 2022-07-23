@@ -4,9 +4,8 @@ const Logo = styled.img`
     display: none;
     width: 40%;
     transform: rotate(-5deg);
-    position: relative;
-    top: 12vh;
-    left: 1.5vw;
+    position: absolute;
+    left: 35%;
     z-index: 990;
     animation: float 15s ease-in-out infinite;
     @media (min-width: 800px) {
@@ -27,7 +26,7 @@ const LogoName = styled.h1`
     letter-spacing: 1.5px;
     position: relative;
     left: -5px;
-    top: -3vh;
+    top: 3vh;
     z-index: 20;
     animation: glitch 5s linear infinite reverse, glitch 0.2s linear infinite;
 
@@ -37,7 +36,7 @@ const LogoName = styled.h1`
     }
 
     @media (min-width: 800px) {
-        top: -5vh;
+        top: 5vh;
         text-shadow: 0px 4px 2px #b2a98f, 0px 8px 10px rgba(0,0,0,0.5);
     }
 `;
