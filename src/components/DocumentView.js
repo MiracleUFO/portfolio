@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { DocumentViewContainer } from '../styles/DocumentView';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
 import DownloadBtn from './DownloadBtn';
+
+import { DocumentViewContainer } from '../styles/DocumentView';
 
 const DocumentView = ({ file }) => {
     const [numberOfPages, setNumberOfPages] = useState(null);

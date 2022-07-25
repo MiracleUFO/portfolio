@@ -44,11 +44,23 @@ const ActionCopy = styled(CopyImp)`
     width: max-content;
     color: rgb(101, 74, 78);
     position: relative;
+    margin-top: 20px;
+
+    @media (min-width: 800px) {
+        margin-top: 40px;
+    }
+
+    &:hover {
+        ::before {
+            border-bottom: 1px solid rgba(101, 74, 78, 0.7);
+            border-left: 1px solid rgba(101, 74, 78, 0.7);
+        }
+    }
 
     ::before {
         content: '';
-        border-bottom: 1px solid rgba(101, 74, 78, 0.45);
-        border-left: 1px solid rgba(101, 74, 78, 0.45);
+        border-bottom: 1px solid rgba(101, 74, 78, 0.5);
+        border-left: 1px solid rgba(101, 74, 78, 0.5);
         padding-left: 10px;
         top: 2.5px;
         position: absolute;
@@ -63,7 +75,7 @@ const ActionCopy = styled(CopyImp)`
         bottom: 2.5px;
 
         &:hover {
-            color: black;
+            color: rgba(0, 0, 0, 0.9);
         }
     }
 `;

@@ -1,29 +1,32 @@
-import { close } from '../helpers/modalLogic';
 import DocumentView from './DocumentView';
-
 import { ModalWrapper, ModalContainer, ModalContent } from '../styles/Modal';
-import '../styles/Modal.css';
 
-const Modal = ({ typeOptions }) => (
-    <ModalWrapper id='modal-wrapper' onClick={close}>
-        <ModalContainer
-            id='modal' 
-            className='modal-hidden'
-            type={typeOptions.type}
-            onClick={e => e.stopPropagation()}
+const Modal = ({ show, setShow, options }) => {
+    return (
+        <ModalWrapper 
+            show={show}
+            onClick={() => setShow(false)} 
         >
-            <ModalContent>
-                <section  className='close-icon' onClick={close}>X</section>
+            <ModalContainer
+                show={show}
+                type={options.type}
+                onClick={e => e.stopPropagation()}
+            >
+                <ModalContent>
+                    <section className='close-icon' onClick={() => setShow(false)}>
+                        X
+                    </section>
 
-                <section>
-                    {typeOptions.type === 'file' ?
-                        <DocumentView file={typeOptions?.file} />
-                    :  null /* for Form */
-                    }
-                </section>
-            </ModalContent> 
-        </ModalContainer>
-    </ModalWrapper>
-);
+                    <section>
+                        {options.type === 'file' ?
+                            <DocumentView file={options?.file} />
+                        :  null /* for forms */
+                        }
+                    </section>
+                </ModalContent> 
+            </ModalContainer>
+        </ModalWrapper>
+    );
+};
 
 export default Modal;

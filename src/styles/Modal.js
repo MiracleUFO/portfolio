@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ModalWrapper = styled.div`
     width: 100%;
     height: 100vh;
-    display: none;
+    display: ${props => props.show ? 'flex' : 'none'};
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -13,14 +13,18 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalContainer = styled.div`
-    position: relative;
-    display: none;
+    max-width: max-content;
     max-height: 90vh;
+    position: relative;
+    display: ${props => props.show ? 'flex' : 'none'};
     align-items: center;
     justify-content: space-between;
     border-radius: ${props => props.type === 'file' ? 0 : '12px'};
     background: white;
-    max-width: max-content;
+
+    @media (min-width: 800px) {
+        width: 70%;
+    }
 `;
 
 const ModalContent = styled.div`
