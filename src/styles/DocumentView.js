@@ -7,7 +7,7 @@ const DocumentViewContainer = styled.div`
     &  {
         height: 95vh;
     }
-
+    
     & canvas {
         max-width: 90vw;
         height: auto !important;

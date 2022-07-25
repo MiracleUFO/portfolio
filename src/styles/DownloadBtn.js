@@ -6,17 +6,17 @@ const DownloadContainer = styled.a`
     padding: 0;
     border: none;
     border-radius: 50%;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    font-size: 0.8em;
     background: white;
-    color: rgba(111, 63, 209, 0.6);
-    text-decoration: none;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: rgba(5, 5, 5, 0.7) 0px 2px 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 0.8em;
+    color: rgba(111, 63, 209, 0.6);
+    text-decoration: none;
+    filter: drop-shadow(1.5px 2.5px 1.5px rgba(50, 50, 50, 0.38));
     
     & .text {
         display: none;
@@ -39,7 +39,7 @@ const DownloadContainer = styled.a`
             width: 8.2em;
             height: max-content;
             border-radius: 25px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+            filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
 
             & .text {
                 display: inline;

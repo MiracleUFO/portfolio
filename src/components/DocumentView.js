@@ -8,17 +8,22 @@ import DownloadBtn from './DownloadBtn';
 
 const DocumentView = ({ file }) => {
     const [numberOfPages, setNumberOfPages] = useState(null);
+    const [loadSuccess, setLoadSuccess] = useState(false)
 
     const onLoadSuccess = ({ numPages }) => {
         setNumberOfPages(numPages);
+        setLoadSuccess(true);
     };
 
     return (
         <DocumentViewContainer>
-            <div className='download-container'>
-                <DownloadBtn url='CV.pdf' />
-            </div>
-
+            {loadSuccess ?
+                <div className='download-container'>
+                    <DownloadBtn url='MiracleUFO_Resume.pdf' />
+                </div>
+            :   null
+            }
+            
             <Document file={file} onLoadSuccess={onLoadSuccess}>
                 {[...Array(numberOfPages)].map((x, i) =>
                     <Page key={i} pageNumber={i + 1} />
