@@ -2,10 +2,17 @@ import DocumentView from './DocumentView';
 import { ModalWrapper, ModalContainer, ModalContent } from '../styles/Modal';
 
 const Modal = ({ show, setShow, options }) => {
+    const close = () => {
+        setShow(false);
+        if (document.body.style.zoom && window.innerWidth < 800) {
+            document.body.style.zoom = '100%';
+        }
+    };
+
     return (
         <ModalWrapper 
             show={show}
-            onClick={() => setShow(false)} 
+            onClick={close} 
         >
             <ModalContainer
                 show={show}
@@ -13,7 +20,7 @@ const Modal = ({ show, setShow, options }) => {
                 onClick={e => e.stopPropagation()}
             >
                 <ModalContent>
-                    <section className='close-icon' onClick={() => setShow(false)}>
+                    <section className='close-icon' onClick={close}>
                         X
                     </section>
 
