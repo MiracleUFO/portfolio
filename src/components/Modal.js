@@ -4,7 +4,7 @@ import { ModalWrapper, ModalContainer, ModalContent } from '../styles/Modal';
 const Modal = ({ show, setShow, options }) => {
     const close = () => {
         setShow(false);
-        document.body.style.zoom = (document.body.style.zoom && window.innerWidth < 800) ?? '100%';
+        document.body.style.zoom = (window.innerWidth < 800) && '100%';
     };
 
     return (
