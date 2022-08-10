@@ -17,7 +17,7 @@ const UnderConstruction = () => {
         <MainContainer>
             <LogoContainer>
                 <Logo src={logoIcon} alt='image of purple space ship' />
-                <LogoName>U.F.O.</LogoName>
+                <LogoName>U.F.O.</LogoName> j
             </LogoContainer>
 
             <CopyContainer>

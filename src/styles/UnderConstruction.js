@@ -5,7 +5,7 @@ const LogoContainer = styled.div`
     top: 7vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: ;
     width: 30vw;
     perspective: 1000px;
