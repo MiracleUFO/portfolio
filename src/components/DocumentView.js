@@ -9,7 +9,7 @@ import { DocumentViewContainer } from '../styles/DocumentView';
 
 const DocumentView = ({ file }) => {
     const [numberOfPages, setNumberOfPages] = useState(null);
-    const [loadSuccess, setLoadSuccess] = useState(false)
+    const [loadSuccess, setLoadSuccess] = useState(false);
 
     const onLoadSuccess = ({ numPages }) => {
         setNumberOfPages(numPages);
